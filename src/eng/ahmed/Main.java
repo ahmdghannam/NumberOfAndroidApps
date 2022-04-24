@@ -23,16 +23,6 @@ public class Main {
     }
 
     private static int min(int j, int k, int c) {
-        int min=0;
-        if(j<k && j<c){
-            min=j;
-        }
-        else if(k<j && k<c){
-            min=k;
-        }
-        else if(c<j && c<k){
-            min=c;
-        }
-        return min;
+     return Math.min(Math.min(j,k),c);
     }
 }
