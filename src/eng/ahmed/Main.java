@@ -14,10 +14,10 @@ public class Main {
 
         int reserved= (((3 * p) / 100) * r);
 
-        int availableRam= r - reserved;
+        int availableRam= r - (reserved*r);
 
         int minApp=min(j,k,c);
-        
+
         System.out.println(availableRam/minApp);
 
     }
